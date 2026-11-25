@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f9f8f2;
+  --fg: #1f2420;
+  --muted: #636a64;
+  --accent: #2f6b4f;
+  --rule: #e4e2d8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151816;
+    --fg: #e8ebe7;
+    --muted: #a1a8a2;
+    --accent: #7cc4a0;
+    --rule: #2b302c;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    "Yu Gothic", Meiryo, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.brand {
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.4rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin: 0.25rem 0 1.25rem;
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+footer a + a {
+  margin-left: 1rem;
+}
